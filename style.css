@@ -1,0 +1,96 @@
+/* BASE DU AN */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* khôi phục lại cỡ chữ mặc định theo rem */
+body {
+  font-size: 1.6rem;
+}
+
+/* -----------common------------ */
+a{
+    text-decoration: none;
+}
+
+.main-content{
+  width: 1170px;
+  max-width: calc(100% - 28px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------Header------------ */
+
+.header {
+  background: #fff;
+}
+
+.header .body{
+  display: flex;
+  align-items: center;
+  padding: 57px 0 8px;
+}
+
+.header.fixed{
+  z-index: 1;
+  position: sticky;
+  top: -44px;
+}
+
+.header .nav{
+  margin-left: auto
+}
+
+.header .nav .list{
+  display: flex;
+  gap: 9px ;
+}
+
+.header .nav .list a{
+  color: #2F3A3B;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 15px;
+}
+
+.header .nav .list a:hover{
+color: #2F3A3B;
+text-shadow: 1px 0 0 currentColor;
+}
+
+.header .action{
+  margin-left: 177px;
+}
+
+.header .action .action-link{
+  color: #494949;
+text-align: center;
+font-size: 1.6rem;
+}
+
+.header .action .action-btn{
+  margin-left: 24px;
+  color: #1EBFC1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 108px;
+  height: 48px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #1EBFC1;
+}
+
+.action .action-btn:hover {
+  background: #1ebfc1;
+  color: white;
+  transition: 0.3s;
+}
+
+
