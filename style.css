@@ -204,7 +204,7 @@ text-shadow: 1px 0 0 currentColor;
 }
 /* course */
 
-.hero-right .course{
+.hero .hero-right .course-hero{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,7 +220,7 @@ text-shadow: 1px 0 0 currentColor;
 }
 
 /* selector after để tạo vạch trắng */
-.hero-right .course::after{
+.hero-right .course-hero::after{
   position: absolute;
   top: 45px;
   left: 29px;
@@ -232,12 +232,12 @@ text-shadow: 1px 0 0 currentColor;
   border-radius: 999px;
 }
 
-.hero-right .course .course-img {
+.hero-right .course-hero .course-img {
   width: 36px;
   height: 40px;
 }
 
-.hero-right .course .course-title{
+.hero-right .course-hero .course-title{
    width: 55px;
   color: #0d1111;
   font-size: 1rem;
@@ -423,4 +423,178 @@ line-height: normal;
   font-weight: 400;
   line-height: 1.68; /* 168.75% */
   max-width: 224px;
+}
+
+/* courses */
+.course{
+  padding-bottom: 130px;
+}
+
+.course .body{
+  padding-bottom: 124px;
+}
+
+.course span{
+  color: #767E7E;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.course .title{
+  margin-top: 18px;
+  color: #0D1111;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.course .body .p-block{
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course .body .p-block .para{
+  max-width: 525px;
+  color: #767E7E;
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: 32px; /* 177.778% */
+}
+
+.course .body .p-block .link-course{
+  color: #1EBFC1;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.course .body .p-block .link-course:hover{
+  opacity: 0.9;
+}
+
+.course .body .media{
+  margin-top: 79px;
+  display: flex;
+  gap: 47px;
+}
+
+.course .body .media .media-block{
+  position: relative;
+}
+
+/* ------ chỉnh size hình ảnh phải chỉnh vào class , chỉnh width 100% object fit cover chỉnh vào thẻ img------- 
+          class của img phải được đặt trong thẻ img */
+
+.course .body .media .media-block .img-item .img-course{
+  width: 359px;
+  height: 393px;
+  border-radius: 8px;
+  opacity: 0.7;
+  background: #D0EFED;
+  
+  
+}
+
+.course .body .media .media-block .img-item .img-course img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.course .body .media .media-block .desc-item{
+  width: 325px;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+position: absolute;
+left: 17px;
+right: 17px;
+top: 322px;
+}
+
+.course .body .media .media-block .desc-item h3{
+  margin: 18px 0 16px 25px ;
+  color: #0D1111;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.course .body .media .media-block .desc-item .desc{
+  margin: 0 0 6px 25px;
+  color: #767E7E;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.course .body .media .media-block .desc-item .desc strong{
+  color: #0D1111;
+font-size: 2.2rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.78;
+}
+
+.course .body .media .media-block .desc-item p{
+  margin:  0 0 16px 25px;
+  color: #9DA6A5;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.course .body .media .media-block .desc-item .class-item{
+  margin-left: 25px;
+  margin-bottom: 29px;
+  display: flex;
+  gap: 10px ;
+}
+
+.course .body .media .media-block .desc-item .class-item span{
+  color: #9DA6A5;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* NUMBER */
+
+.number .body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px  ;
+  padding: 135px 0 130px 0;
+}
+
+.number .num-item .title{
+  color: #0D1111;
+  text-align: center;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.number .num-item .desc{
+  margin-top: 11px;
+  color: #767E7E;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
 }
